@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 220 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+    --primary: 220 30% 20%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 40 30% 52%;
+    --secondary-foreground: 220 30% 15%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 40 30% 52%;
+    --accent-foreground: 220 30% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 10% 85%;
+    --input: 40 10% 85%;
+    --ring: 40 30% 52%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-julia-cream text-julia-charcoal font-sans antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .julia-container {
+    @apply w-full max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .julia-section {
+    @apply py-20 lg:py-28;
+  }
+
+  .julia-heading-xl {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight;
+  }
+
+  .julia-heading-lg {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight;
+  }
+
+  .julia-heading-md {
+    @apply font-serif text-2xl md:text-3xl font-medium leading-snug;
+  }
+
+  .julia-heading-sm {
+    @apply font-serif text-xl md:text-2xl font-medium;
+  }
+
+  .julia-body {
+    @apply font-sans text-base md:text-lg leading-relaxed text-julia-gray;
+  }
+
+  .julia-body-sm {
+    @apply font-sans text-sm md:text-base leading-relaxed text-julia-gray;
+  }
+
+  .julia-label {
+    @apply font-sans text-xs uppercase tracking-[0.2em] font-medium text-julia-gold;
+  }
+
+  .julia-btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-julia-blue text-white font-sans text-sm font-medium tracking-wide transition-all duration-300 hover:bg-julia-charcoal;
+  }
+
+  .julia-btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 border border-julia-blue text-julia-blue font-sans text-sm font-medium tracking-wide transition-all duration-300 hover:bg-julia-blue hover:text-white;
+  }
+
+  .julia-btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-julia-gold text-white font-sans text-sm font-medium tracking-wide transition-all duration-300 hover:bg-julia-charcoal;
+  }
+
+  .julia-card {
+    @apply bg-white p-8 lg:p-10;
+  }
+
+  .julia-divider {
+    @apply w-16 h-px bg-julia-gold;
+  }
+
+  .julia-nav-link {
+    @apply font-sans text-sm font-medium text-julia-charcoal/80 hover:text-julia-blue transition-colors duration-300;
+  }
+
+  .julia-nav-link-active {
+    @apply text-julia-blue;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
