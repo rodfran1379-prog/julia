@@ -84,8 +84,8 @@ export default function QueEsJulia() {
               
               <div className="py-8 border-y border-julia-blue/10 my-8">
                 <p className="font-serif text-xl md:text-2xl text-julia-blue leading-relaxed">
-                  "No somos un despacho tradicional. Somos una plataforma que libera 
-                  el valor de bienes inmuebles bloqueados por procesos sucesorios."
+                  &ldquo;No somos un despacho tradicional. Somos una plataforma que libera 
+                  el valor de bienes inmuebles bloqueados por procesos sucesorios.&rdquo;
                 </p>
               </div>
               
