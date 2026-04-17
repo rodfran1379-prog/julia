@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { TrendingUp, Wallet, Shield, CheckCircle } from 'lucide-react';
 

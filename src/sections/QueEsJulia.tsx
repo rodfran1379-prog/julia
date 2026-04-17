@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { Search, HandCoins, Scale, Users } from 'lucide-react';
 
@@ -84,8 +86,8 @@ export default function QueEsJulia() {
               
               <div className="py-8 border-y border-julia-blue/10 my-8">
                 <p className="font-serif text-xl md:text-2xl text-julia-blue leading-relaxed">
-                  &ldquo;No somos un despacho tradicional. Somos una plataforma que libera 
-                  el valor de bienes inmuebles bloqueados por procesos sucesorios.&rdquo;
+                  "No somos un despacho tradicional. Somos una plataforma que libera 
+                  el valor de bienes inmuebles bloqueados por procesos sucesorios."
                 </p>
               </div>
               

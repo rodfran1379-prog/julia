@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect, useRef } from 'react';
 import { Send, User, Bot, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';

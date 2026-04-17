@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { TrendingUp, Shield, Clock, DollarSign, Users, CheckCircle, PieChart, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';

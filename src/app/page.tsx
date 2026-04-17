@@ -1,14 +1,16 @@
-"use client"
+
 import Navigation from '@/sections/Navigation';
 import Hero from '@/sections/Hero';
+import Problemas from '@/sections/Problemas';
+import Diagnostico from '@/sections/Diagnostico';
 import Servicios from '@/sections/Servicios';
-import Blog from '@/sections/Blog';
-import Calculadoras from '@/sections/Calculadoras';
 import Contratos from '@/sections/Contratos';
-import Inversionistas from '@/sections/Inversionistas';
-import FAQ from '@/sections/FAQ';
+import Simulador from '@/sections/Simulador';
+import Blog from '@/sections/Blog';
 import Contacto from '@/sections/Contacto';
 import Footer from '@/sections/Footer';
+
+
 
 export default function Home() {
   return (
@@ -16,12 +18,12 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <Problemas />
+        <Diagnostico />
         <Servicios />
-        <Blog />
-        <Calculadoras />
         <Contratos />
-        <Inversionistas />
-        <FAQ />
+        <Simulador />
+        <Blog />
         <Contacto />
       </main>
       <Footer />

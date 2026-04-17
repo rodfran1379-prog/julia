@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Users, DollarSign, Percent, Info } from 'lucide-react';
 import { Input } from '@/components/ui/input';

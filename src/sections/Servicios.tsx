@@ -1,42 +1,61 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
-import { FileText, Home, Gavel, Calculator, Scale, Shield } from 'lucide-react';
+import { FileText, Home, Gavel, Scale, CheckCircle, MessageCircle } from 'lucide-react';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const servicios = [
   {
     icon: FileText,
-    title: 'Juicios Sucesorios Intestamentarios',
-    description: 'Cuando no existe testamento, gestionamos todo el proceso de declaración de herederos, inventario de bienes y adjudicación final del patrimonio.',
-    features: ['Sin costo inicial', 'Financiamiento disponible', 'Todo Nuevo León'],
+    titulo: 'Juicios Sucesorios Intestamentarios',
+    descripcion: 'Cuando no existe testamento, gestionamos todo el proceso de declaración de herederos, inventario de bienes y adjudicación final del patrimonio.',
+    imagen: '/images/servicio-documentos.jpg',
+    beneficios: [
+      'Sin costo inicial',
+      'Financiamiento disponible',
+      'Cobertura en todo Nuevo León',
+      'Abogado especializado asignado',
+    ],
+    tiempo: '18-36 meses promedio',
   },
   {
     icon: Home,
-    title: 'Recuperación de Herencias',
-    description: 'Identificamos bienes inmuebles abandonados o en litigio y trabajamos para su regularización y recuperación patrimonial completa.',
-    features: ['Casa, terrenos, departamentos', 'Bienes olvidados', 'Herencias extranjeras'],
+    titulo: 'Recuperación de Herencias',
+    descripcion: 'Identificamos bienes inmuebles abandonados o en litigio y trabajamos para su regularización y recuperación patrimonial completa.',
+    imagen: '/images/servicio-casa.jpg',
+    beneficios: [
+      'Casas, terrenos, departamentos',
+      'Bienes olvidados o abandonados',
+      'Herencias desde el extranjero',
+      'Rastreo de documentación',
+    ],
+    tiempo: 'Según complejidad',
   },
   {
     icon: Gavel,
-    title: 'Defensa de Derechos Hereditarios',
-    description: 'Protegemos tu legítima ante cualquier vulneración, incluyendo conflictos entre coherederos e impugnación de testamentos.',
-    features: ['Legítima forzosa', 'Colación de donaciones', 'Acciones de nulidad'],
+    titulo: 'Defensa de Derechos Hereditarios',
+    descripcion: 'Protegemos tu legítima ante cualquier vulneración, incluyendo conflictos entre coherederos e impugnación de testamentos.',
+    imagen: '/images/servicio-juzgado.jpg',
+    beneficios: [
+      'Legítima forzosa protegida',
+      'Colación de donaciones',
+      'Acciones de nulidad',
+      'Defensa en juicio',
+    ],
+    tiempo: 'Variable',
   },
   {
     icon: Scale,
-    title: 'Regularización Patrimonial',
-    description: 'Estructuramos esquemas jurídicos que permiten la correcta transmisión de bienes entre generaciones de forma ordenada.',
-    features: ['Planeación sucesoria', 'Fideicomisos', 'Sociedades patrimoniales'],
-  },
-  {
-    icon: Calculator,
-    title: 'Cálculo de Impuestos y Gastos',
-    description: 'Determinamos con precisión todos los costos involucrados en el proceso sucesorio para que tomes decisiones informadas.',
-    features: ['ISAI', 'Honorarios notariales', 'Gastos de juicio'],
-  },
-  {
-    icon: Shield,
-    title: 'Asesoría Preventiva',
-    description: 'Te ayudamos a estructurar tu patrimonio de manera que la transmisión a tus herederos sea lo más sencilla posible.',
-    features: ['Testamentos', 'Donaciones', 'Poderes'],
+    titulo: 'Regularización Patrimonial',
+    descripcion: 'Estructuramos esquemas jurídicos que permiten la correcta transmisión de bienes entre generaciones de forma ordenada.',
+    imagen: '/images/servicio-finanzas.jpg',
+    beneficios: [
+      'Planeación sucesoria',
+      'Fideicomisos testamentarios',
+      'Sociedades patrimoniales',
+      'Testamentos vitales',
+    ],
+    tiempo: '2-4 semanas',
   },
 ];
 
@@ -69,7 +88,7 @@ export default function Servicios() {
     <section
       id="servicios"
       ref={sectionRef}
-      className="julia-section relative bg-white"
+      className="julia-section relative bg-julia-cream"
     >
       <div className="julia-container">
         {/* Header */}
@@ -78,58 +97,82 @@ export default function Servicios() {
             <span className="julia-label">Nuestros Servicios</span>
           </div>
           <h2 className="reveal animate-delay-100 julia-heading-lg text-julia-blue mb-6">
-            Especialistas en Derecho Sucesorio
+            Soluciones legales para cada situación
           </h2>
           <p className="reveal animate-delay-200 julia-body">
-            Ofrecemos soluciones jurídicas integrales en materia de herencias y sucesiones. 
-            Todos nuestros servicios están disponibles en el estado de Nuevo León.
+            Cada caso de herencia es único. Por eso ofrecemos servicios especializados 
+            adaptados a tu situación específica.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {servicios.map((servicio, index) => (
+        <div className="reveal animate-delay-300 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {servicios.map((servicio) => (
             <div
-              key={servicio.title}
-              className="reveal julia-card group hover:shadow-xl transition-all duration-300 border border-julia-blue/5"
-              style={{ animationDelay: `${300 + index * 100}ms` }}
+              key={servicio.titulo}
+              className="bg-white overflow-hidden hover:shadow-xl transition-all duration-300 border border-julia-blue/5 group"
             >
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-julia-blue/5 flex items-center justify-center transition-colors group-hover:bg-julia-gold/10 flex-shrink-0">
-                  <servicio.icon
-                    size={24}
-                    className="text-julia-blue transition-colors group-hover:text-julia-gold"
-                    strokeWidth={1.5}
-                  />
-                </div>
-                <h3 className="font-serif text-xl text-julia-blue leading-tight">
-                  {servicio.title}
-                </h3>
+              {/* Service Image */}
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src={servicio.imagen} 
+                  alt={servicio.titulo}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               
-              <p className="julia-body-sm mb-6">{servicio.description}</p>
-              
-              <div className="flex flex-wrap gap-2">
-                {servicio.features.map((feature) => (
-                  <span
-                    key={feature}
-                    className="px-3 py-1 bg-julia-blue/5 text-julia-blue text-xs font-medium"
-                  >
-                    {feature}
-                  </span>
-                ))}
+              <div className="p-8">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 bg-julia-blue/5 flex items-center justify-center transition-colors group-hover:bg-julia-gold/10 flex-shrink-0">
+                    <servicio.icon
+                      size={28}
+                      className="text-julia-blue transition-colors group-hover:text-julia-gold"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl text-julia-blue mb-3 group-hover:text-julia-gold transition-colors">
+                      {servicio.titulo}
+                    </h3>
+                    <p className="julia-body-sm mb-6">{servicio.descripcion}</p>
+                    
+                    <div className="space-y-2 mb-6">
+                      {servicio.beneficios.map((beneficio, i) => (
+                        <div key={i} className="flex items-center gap-2 text-sm text-julia-charcoal">
+                          <CheckCircle size={14} className="text-julia-gold flex-shrink-0" />
+                          {beneficio}
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <div className="flex items-center justify-between pt-4 border-t border-julia-blue/10">
+                      <span className="text-sm text-julia-gray">
+                        <span className="font-medium">Tiempo:</span> {servicio.tiempo}
+                      </span>
+                      <WhatsAppButton
+                        message={`Hola, me interesa el servicio de ${servicio.titulo}`}
+                        variant="outline"
+                        size="sm"
+                        className="flex items-center gap-1 text-sm font-medium text-julia-blue hover:text-julia-gold transition-colors"
+                      >
+                        <MessageCircle size={14} />
+                        Cotizar aquí
+                      </WhatsAppButton>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="reveal animate-delay-700 mt-12 text-center">
-          <p className="julia-body-sm text-julia-charcoal/60 mb-6">
+        <div className="reveal animate-delay-500 mt-12 text-center">
+          <p className="julia-body-sm text-julia-gray mb-6">
             ¿No encuentras lo que buscas? Contáctanos para una evaluación personalizada.
           </p>
-          <a href="#contacto" className="julia-btn-outline">
-            Solicitar información
+          <a href="#contacto" className="julia-btn-primary">
+            Hablar con un especialista
           </a>
         </div>
       </div>

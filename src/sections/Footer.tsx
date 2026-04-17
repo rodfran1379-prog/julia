@@ -1,12 +1,12 @@
-import { Scale } from 'lucide-react';
+"use client";
+import { Scale, Phone, Mail, MapPin, User } from 'lucide-react';
 
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
+  { label: 'Diagnóstico', href: '#diagnostico' },
   { label: 'Servicios', href: '#servicios' },
+  { label: 'Simulador', href: '#simulador' },
   { label: 'Blog', href: '#blog' },
-  { label: 'Calculadoras', href: '#calculadoras' },
-  { label: 'Contratos', href: '#contratos' },
-  { label: 'Inversionistas', href: '#inversionistas' },
   { label: 'Contacto', href: '#contacto' },
 ];
 
@@ -41,17 +41,31 @@ export default function Footer() {
               Herencias & Sucesiones
             </p>
             <p className="font-sans text-sm text-white/60 max-w-md mb-6">
-              Plataforma de originación y gestión de sucesiones respaldadas por bienes 
-              inmuebles. Especialistas en recuperar patrimonios sin costo inicial en 
-              Nuevo León, México.
+              Especialistas en recuperar patrimonios en Nuevo León. 
+              Resolvemos conflictos hereditarios de forma clara, rápida y legalmente segura.
             </p>
-            <p className="font-serif text-lg text-julia-gold mb-4">
+            <p className="font-serif text-lg text-julia-gold mb-6">
               Análisis jurídico. Solución con estrategia.
             </p>
-            <div className="space-y-2 text-sm text-white/60">
-              <p>Lic. Eben Francisco Rodríguez Vela</p>
-              <p>Pegasos 234, Arcadia, Juárez, NL</p>
-              <p>Tel: 720 318 7601</p>
+            
+            {/* Contact info */}
+            <div className="space-y-3 text-sm text-white/60">
+              <div className="flex items-center gap-3">
+                <User size={16} className="text-julia-gold" />
+                <span>Lic. Eben Francisco Rodríguez Vela</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin size={16} className="text-julia-gold" />
+                <span>Pegasos 234, Arcadia, Juárez, NL</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone size={16} className="text-julia-gold" />
+                <span>720 318 7601</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail size={16} className="text-julia-gold" />
+                <span>contacto@julialegalconsulting.com</span>
+              </div>
             </div>
           </div>
 
