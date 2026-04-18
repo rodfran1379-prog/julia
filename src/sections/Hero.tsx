@@ -120,18 +120,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Lawyer Image */}
+          {/* Company Logo */}
           <div className="reveal animate-delay-500 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-julia-gold/20 rounded-full blur-2xl" />
               <img
-                src="/images/abogado-hero.jpg"
-                alt="Lic. Eben Francisco Rodríguez Vela - Abogado especialista en herencias"
-                className="relative w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-white shadow-2xl"
+                src="/images/julia.png"
+                alt="Julia - Especialistas en Herencias"
+                className="relative w-48 h-48 md:w-56 md:h-56 object-contain rounded-full border-4 border-white shadow-2xl"
               />
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-julia-blue text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap">
-                Lic. Eben Francisco Rodríguez Vela
-              </div>
             </div>
           </div>
         </div>

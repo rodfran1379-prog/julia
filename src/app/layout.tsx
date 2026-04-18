@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description: 'Resolvemos conflictos hereditarios de forma clara, rápida y legalmente segura. Sin costo inicial.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/julia.png',
         width: 1200,
         height: 630,
         alt: 'Julia Herencias - Especialistas en Herencias',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Julia Legal Consulting - Especialistas en Herencias y Sucesiones en México',
     description: 'Resolvemos conflictos hereditarios de forma clara, rápida y legalmente segura. Sin costo inicial.',
-    images: ['/og-image.jpg'],
+    images: ['/images/julia.png'],
     site: '@julialegalconsulting',
   },
   robots: {
