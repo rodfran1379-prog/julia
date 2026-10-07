@@ -19,6 +19,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <AltaComplejidad />
         <Problemas />
         <Diagnostico />
         <Servicios />
