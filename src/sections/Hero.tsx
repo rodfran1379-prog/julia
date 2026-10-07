@@ -49,9 +49,6 @@ export default function Hero() {
 
       <div className="relative z-10 julia-container">
         <div className="max-w-5xl mx-auto">
-          
-   
-
           {/* Main Title */}
           <h1 className="reveal animate-delay-100 text-center mb-6">
             <span className="julia-heading-xl text-julia-blue block mb-4">
