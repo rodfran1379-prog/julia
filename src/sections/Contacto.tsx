@@ -81,7 +81,6 @@ export default function Contacto() {
               <p className="julia-body-sm">
                 Con años de experiencia en juicios sucesorios en Nuevo León, 
                 te acompañamos en todo el proceso de recuperación de tu patrimonio.
-                Hemos ayudado a más de 100 familias a resolver sus conflictos hereditarios.
               </p>
             </div>
 
