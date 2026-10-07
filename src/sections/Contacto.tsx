@@ -92,8 +92,8 @@ export default function Contacto() {
                 <div>
                   <p className="font-sans text-sm text-julia-gray mb-1">Dirección</p>
                   <p className="font-serif text-lg text-julia-blue">
-                    Pegasos 234, Arcadia<br />
-                    Juárez, Nuevo León, México
+                    Washington Pte 1129 <br />
+                    Monterrey , Nuevo León, México CP 64000
                   </p>
                 </div>
               </div>
