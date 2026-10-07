@@ -41,7 +41,7 @@ export default function Footer() {
               Herencias & Sucesiones
             </p>
             <p className="font-sans text-sm text-white/60 max-w-md mb-6">
-              Especialistas en recuperar patrimonios en Nuevo León. 
+              Especialistas en recuperar patrimonios en Monterrey. 
               Resolvemos conflictos hereditarios de forma clara, rápida y legalmente segura.
             </p>
             <p className="font-serif text-lg text-julia-gold mb-6">
@@ -56,7 +56,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-julia-gold" />
-                <span>Pegasos 234, Arcadia, Juárez, NL</span>
+                <span>Washington Pte. 1129, Centro de Monterrey, NL, C.P. 64000</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-julia-gold" />
@@ -64,7 +64,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-julia-gold" />
-                <span>contacto@julialegalconsulting.com</span>
+                <span>erodriguez@julialegalconsulting.com</span>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Footer() {
               © {new Date().getFullYear()} JULIA Herencias & Sucesiones. Todos los derechos reservados.
             </p>
             <p className="font-sans text-xs text-white/40">
-              Juárez, Nuevo León, México
+              Monterrey, Nuevo León, México
             </p>
           </div>
         </div>
