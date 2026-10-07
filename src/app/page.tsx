@@ -2,7 +2,8 @@
 import Navigation from '@/sections/Navigation';
 import Hero from '@/sections/Hero';
 import Problemas from '@/sections/Problemas';
-import Diagnostico from '@/sections/Diagnostico';
+import Diagnostico from
+import AltaComplejidad from '@/sections/AltaComplejidad'; '@/sections/Diagnostico';
 import Servicios from '@/sections/Servicios';
 import Contratos from '@/sections/Contratos';
 import Simulador from '@/sections/Simulador';
