@@ -55,7 +55,7 @@ export default function Hero() {
               Especialistas en Herencias y Sucesiones
             </span>
             <span className="font-serif text-2xl md:text-3xl lg:text-4xl text-julia-charcoal/80 block">
-              en Nuevo León
+              en Monterrey
             </span>
           </h1>
 
@@ -99,16 +99,6 @@ export default function Hero() {
               <p className="font-serif text-3xl text-julia-gold">100+</p>
               <p className="text-sm text-julia-gray">Sucesiones resueltas</p>
             </div>
-            <div>
-              <p className="font-serif text-3xl text-julia-gold">$50M+</p>
-              <p className="text-sm text-julia-gray">Patrimonio recuperado</p>
-            </div>
-            <div>
-              <p className="font-serif text-3xl text-julia-gold">98%</p>
-              <p className="text-sm text-julia-gray">Clientes satisfechos</p>
-            </div>
-          </div>
-
           {/* Company Logo */}
           <div className="reveal animate-delay-500 flex justify-center">
             <div className="relative">
