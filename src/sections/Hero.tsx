@@ -49,16 +49,8 @@ export default function Hero() {
 
       <div className="relative z-10 julia-container">
         <div className="max-w-5xl mx-auto">
-          {/* Alert Banner */}
-          <div className="reveal mb-8 flex justify-center">
-            <div className="inline-flex items-center gap-2 bg-julia-gold/10 border border-julia-gold/30 px-4 py-2 rounded-full">
-              <AlertTriangle size={16} className="text-julia-gold" />
-              <span className="text-sm font-medium text-julia-charcoal">
-                Más de 2,000 familias en Nuevo León tienen bienes bloqueados por
-                sucesiones sin resolver
-              </span>
-            </div>
-          </div>
+          
+   
 
           {/* Main Title */}
           <h1 className="reveal animate-delay-100 text-center mb-6">
