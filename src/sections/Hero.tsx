@@ -71,11 +71,6 @@ export default function Hero() {
             .
             <br />
             <span className="text-julia-gold font-medium">
-              Sin costo inicial.
-            </span>{" "}
-            Solo pagas cuando recuperes tu patrimonio.
-          </p>
-
           {/* CTA Buttons */}
           <div className="reveal animate-delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <WhatsAppButton
