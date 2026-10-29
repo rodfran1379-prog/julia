@@ -130,9 +130,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: {
     default: 'JULIA - Especialistas en Herencias y Sucesiones en México',
-    template: '%s | Julia Legal Consulting',
-  },
-  description: 'Resolvemos conflictos hereditarios de forma clara, rápida y legalmente segura. Más de 100 sucesiones resueltas, $50M+ patrimonio recuperado. Sin costo inicial.',
+    template: '%s | 
   keywords: [
     'herencias México',
     'sucesiones México',
